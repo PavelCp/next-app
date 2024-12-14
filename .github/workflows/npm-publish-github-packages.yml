@@ -16,7 +16,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 23.3.0
-      - run: cd ../../next-app && npm ci
+      - run: cd ../../next-app
+      - run: npm ci
 
   publish-gpr:
     needs: build
