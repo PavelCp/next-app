@@ -30,19 +30,16 @@ jobs:
         with:
           static_site_generator: next
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Switch deirectory for build
+        run: cd my-app && npm ci
 
       - name: Build with Next.js 🏗️
-        run: npx next build
-
-      - name: check files
-        run: ls
+        run: cd my-app && npx next build
 
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: my-app/out
 
   deploy:
     environment:
