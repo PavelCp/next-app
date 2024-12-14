@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
   output: "export",
   basePath: "/next-app",
   reactStrictMode: true,
+  images: { path: "/next-app" },
 };
 
 export default nextConfig;
