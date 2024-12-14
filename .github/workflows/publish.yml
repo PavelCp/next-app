@@ -31,7 +31,7 @@ jobs:
           static_site_generator: next
 
       - name: Switch deirectory for build
-        run: cd my-app
+        run: cd my-app && npm ci
 
       - name: Build with Next.js 🏗️
         run: cd my-app && npx next build
