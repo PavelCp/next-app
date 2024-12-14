@@ -30,7 +30,7 @@ jobs:
         with:
           static_site_generator: next
 
-      - name: Switch deirectory for build
+      - name: Install dependencies
         run: npm ci
 
       - name: Build with Next.js 🏗️
@@ -39,7 +39,7 @@ jobs:
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
         with:
-          path: /out
+          path: ./out
 
   deploy:
     environment:
