@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   // 'https://github.com/PavelCp/next-app'
   output: "export",
   basePath: "/next-app",
+  reactStrictMode: true
 };
 
 export default nextConfig;
