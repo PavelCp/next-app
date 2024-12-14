@@ -30,6 +30,9 @@ jobs:
         with:
           static_site_generator: next
 
+      - name: Switch deirectory for build
+        run: cd ../../my-app
+
       - name: Build with Next.js 🏗️
         run: npx next build
 
