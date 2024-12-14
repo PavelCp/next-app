@@ -1,7 +1,7 @@
 import Image from "next/image";
-import basePath from "../next.config";
+import nextConfig from "../next.config";
 
-// const src = `${nextConfig.basePath}/next.svg`;
+const basePath = nextConfig.basePath;
 
 export default function Home() {
   return (
