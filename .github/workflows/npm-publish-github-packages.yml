@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 23.3.0
-      - run: cd next-app
+      - run: ls
       - run: npm ci
 
   publish-gpr:
@@ -31,7 +31,7 @@ jobs:
         with:
           node-version: 23.3.0
           registry-url: https://npm.pkg.github.com/
-      - run: cd next-app
+      - run: ls
       - run: npm ci
       - run: npm publish
         env:
